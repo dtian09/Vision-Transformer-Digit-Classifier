@@ -9,7 +9,7 @@ from tqdm import tqdm
 from vit import ViT
 
 class Trainer:
-    def __init__(self, model, train_loader, val_loader, test_loader, criterion, optimizer, device, num_epochs, patience):
+    def __init__(self, model, train_loader, val_loader, criterion, optimizer, device, num_epochs, patience):
         self.model = model
         self.train_loader = train_loader
         self.val_loader = val_loader
